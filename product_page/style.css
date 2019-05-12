@@ -162,8 +162,7 @@ input {
     margin: 0 auto;
     display: block;
   }
-  #navbar {
-  }
+
   nav {
     display: flex;
     flex-direction: column;
@@ -182,8 +181,6 @@ input {
 }
 
 @media (max-width: 800px) {
-  #navbar {
-  }
   nav {
     display: flex;
     flex-direction: column;
