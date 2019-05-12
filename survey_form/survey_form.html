@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <div id="main">
+      <p id="description">
+        Let us know how we can improve the WebPage
+      </p>
+      <form id="survey-form">
+        <div class="row">
+          <div class="label">
+            <label id="name-label" for="name">* Name:</label>
+          </div>
+          <div class="inputr">
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label id="email-label" for="email">* Email:</label>
+          </div>
+          <div class="inputr">
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label id="number-label" for="number">* Age:</label>
+          </div>
+          <div class="inputr">
+            <input
+              id="number"
+              type="number"
+              placeholder="Enter your Age"
+              required
+              min="14"
+              max="130"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label id="dropdown"
+              >Wich option best describes your current role?</label
+            >
+          </div>
+          <div class="inputr">
+            <select name="dropdown" id="dropdown">
+              <option value="NoOption" selected disabled="true"
+                >Select an option</option
+              >
+              <option value="Student">Student</option>
+              <option value="Full Time Job">Full Time Job</option>
+              <option value="Full Time Learner">Full Time Learner</option>
+              <option value="Prefer Not To Say">Prefer Not To Say</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row-survey">
+          <div class="survey-label">
+            <label id="survey-label" for="survey"
+              >* How likely is that you would recommend our WebPage to a
+              friend?</label
+            >
+          </div>
+          <div class="input_radio">
+            <input
+              id="survey"
+              type="radio"
+              name="recommendation"
+              value="definitely"
+              required
+            />Definitely<br />
+            <input
+              type="radio"
+              name="recommendation"
+              value="maybe"
+            />Maybe<br />
+            <input type="radio" name="recommendation" value="not_sure" />Not
+            sure<br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label id="dropdown">What do you like most in FCC</label>
+          </div>
+          <div class="inputr">
+            <select name="dropdown">
+              <option value="NoOption" selected disabled="true"
+                >Select an option</option
+              >
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="open_source">Open Source</option>
+            </select>
+          </div>
+        </div>
+        <div class="row-survey">
+          <div class="survey-label">
+            <label id="survey-label" for="checkbox"
+              >Things that should be improved in the future (Check all that
+              apply):</label
+            >
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" name="option1" value="front_end" />Front-end
+            Projects<br />
+            <input type="checkbox" name="option2" value="back_end" />Back-end
+            Projects<br />
+            <input
+              type="checkbox"
+              name="option3"
+              value="data_visualization"
+            />Data Visualzation<br />
+            <input
+              type="checkbox"
+              name="option4"
+              value="challenges"
+            />Challenges<br />
+            <input type="checkbox" name="option5" value="open_source" />Open
+            Source Community<br />
+            <input type="checkbox" name="option6" value="gitter_help" />Gitter
+            help rooms<br />
+            <input type="checkbox" name="option7" value="videos" />Videos<br />
+            <input type="checkbox" name="option8" value="city_meetups" />City
+            Meetups<br />
+            <input type="checkbox" name="option9" value="wiki" />Wiki<br />
+            <input type="checkbox" name="option10" value="forum" />Forum<br />
+            <input
+              type="checkbox"
+              name="option11"
+              value="additional_courses"
+            />Additional Courses<br />
+          </div>
+        </div>
+        <div class="row-survey">
+          <div class="survey-label">
+            <label id="survey-label" for="textarea"
+              >Any Comments or Suggestions?</label
+            >
+          </div>
+          <div class="input-textarea">
+            <textarea rows="4" cols="40">
+Enter your comment here...
+                  </textarea
+            >
+          </div>
+        </div>
+        <div class="row-submit">
+          <input type="submit" value="Submit" id="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

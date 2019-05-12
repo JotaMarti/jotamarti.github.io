@@ -1,0 +1,161 @@
+body {
+  background-color: rgb(169, 215, 209);
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+}
+
+#main {
+  background-color: rgb(250, 250, 250);
+  width: 77.2%;
+  max-width: 920px;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+#description {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#survey-form {
+  padding: 5px;
+}
+
+#survey-form input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid rgb(221, 221, 221);
+  width: 60%;
+  max-width: 300px;
+}
+
+.row {
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 10px;
+}
+
+.row-submit {
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  height: 2em;
+}
+
+#submit {
+  min-width: 73px !important;
+  width: 10% !important;
+  background-color: rgb(89, 172, 224) !important;
+  border: none !important;
+  border-radius: 5px !important;
+  color: rgb(255, 255, 255);
+  height: 100% !important;
+}
+
+.row-survey {
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 10px;
+}
+
+.inputr {
+  width: 50%;
+}
+
+.input_radio,
+.input-checkbox,
+.input-textarea {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.input_radio input,
+.input-checkbox input {
+  margin: 0;
+  padding: 0;
+  width: 15px !important;
+}
+
+.input-textarea textarea {
+  margin: 0;
+  padding: 0;
+  max-width: 70%;
+}
+
+.label {
+  width: 50%;
+  text-align: right;
+  position: relative;
+  padding-right: 20px;
+  margin-left: 50px;
+  flex: 1;
+}
+
+.survey-label {
+  width: 50%;
+  text-align: right;
+  position: relative;
+  padding-right: 20px;
+  margin-left: 50px;
+  padding-top: 0px !important;
+  margin-top: 0px !important;
+  flex: 1;
+}
+
+#survey-label {
+}
+
+@media (max-width: 800px) {
+  #survey-form input,
+  textarea,
+  select {
+    margin: 10px 0;
+    width: 80%;
+  }
+
+  textarea {
+    margin-top: 10px !important;
+  }
+
+  #survey-form .row,
+  .row-survey {
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 10px;
+    margin: 10px;
+  }
+
+  #survey-form .label,
+  .survey-label {
+    text-align: left;
+    margin-left: 0px;
+    width: 90%;
+  }
+  #survey-form .inputr,
+  .input-textarea {
+    width: 100%;
+  }
+
+  #surver-form {
+    padding: 5px;
+  }
+}
