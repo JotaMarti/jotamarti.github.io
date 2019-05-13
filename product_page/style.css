@@ -10,7 +10,7 @@ body {
 
 header {
   display: inline-block;
-  width: 94%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +20,7 @@ header {
   margin-top: 0 !important;
   background-color: rgb(238, 238, 238);
   padding-top: 10px;
+  margin-left: 0 !important;
 }
 
 footer {
@@ -64,6 +65,10 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+#nav-bar {
+  padding-right: 30px;
 }
 
 a {
@@ -282,7 +287,7 @@ input {
     margin: 10px;
   }
 
-  #header-img img {
+  #header-image img {
     justify-content: center;
     align-items: center;
     width: 275px !important;
