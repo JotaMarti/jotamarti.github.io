@@ -323,7 +323,7 @@ input {
   #title-email-field {
     padding-top: 100px;
   }
-  .grid2 {
+  #grid2 {
     padding-top: 60px;
     display: grid;
     width: 50%;
