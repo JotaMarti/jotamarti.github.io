@@ -1,0 +1,224 @@
+body {
+  margin: 0 0 0 0;
+  height: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  position: absolute;
+  height: auto;
+  width: auto;
+  margin-left: 301px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 200px;
+}
+
+main header {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+main p {
+  padding-left: 20px;
+}
+
+main li {
+  margin: 15px 0;
+}
+
+main ul {
+  padding-left: 60px;
+}
+
+main code {
+  line-height: 1.6;
+}
+
+main div {
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  width: 80%;
+  height: 100%;
+  border-radius: 5px;
+  margin-left: 60px;
+  align-items: center;
+  padding-left: 10px;
+  max-width: 790px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#navbar {
+  padding-top: 0px;
+  border-right: 1px solid #000;
+  display: grid;
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  margin-left: 1px;
+  align-items: center;
+  justify-items: left;
+  grid-template-columns: auto;
+  grid-template-rows: 60px repeat(14, 42px) 500px;
+  grid-template-areas:
+    "nav1"
+    "nav2"
+    "nav3"
+    "nav4"
+    "nav5"
+    "nav6"
+    "nav7"
+    "nav8"
+    "nav9"
+    "nav10"
+    "nav11"
+    "nav12"
+    "nav13"
+    "nav14"
+    "nav15";
+}
+
+.item15 {
+}
+#navbar a {
+  text-decoration: none;
+  color: rgb(84, 85, 89);
+  border: 1px solid #000;
+  border-left: none !important;
+  border-right: none;
+  border-bottom: none !important;
+  display: flex;
+  padding-left: 40px !important;
+  align-items: center;
+  justify-items: center;
+  width: 250px;
+  padding: 10px 10px 10px 10px;
+}
+
+.item1 {
+  grid-area: nav1;
+  padding-left: 40px !important;
+}
+
+.item2 {
+  grid-area: nav2;
+}
+
+.item3 {
+  grid-area: nav3;
+}
+
+.item4 {
+  grid-area: nav4;
+}
+
+.item5 {
+  grid-area: nav5;
+}
+
+.item6 {
+  grid-area: nav6;
+}
+
+.item7 {
+  grid-area: nav7;
+}
+
+.item4 {
+  grid-area: nav4;
+}
+
+.item8 {
+  grid-area: nav8;
+}
+
+.item9 {
+  grid-area: nav9;
+}
+
+.item10 {
+  grid-area: nav10;
+}
+
+.item11 {
+  grid-area: nav11;
+}
+
+.item12 {
+  grid-area: nav12;
+}
+
+.item13 {
+  grid-area: nav13;
+}
+
+.item14 {
+  grid-area: nav14;
+}
+.item15 {
+  grid-area: nav15;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    padding-top: 0px;
+    border-right: 1px solid #000;
+    display: grid;
+    position: absolute !important;
+    height: 300px;
+    overflow-y: scroll;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    width: 350px;
+    margin-left: 1px;
+    align-items: center;
+    justify-items: left;
+    margin-left: 100px;
+    grid-template-columns: auto;
+    grid-template-rows: 60px repeat(14, 42px) 500px;
+    grid-template-areas:
+      "nav1"
+      "nav2"
+      "nav3"
+      "nav4"
+      "nav5"
+      "nav6"
+      "nav7"
+      "nav8"
+      "nav9"
+      "nav10"
+      "nav11"
+      "nav12"
+      "nav13"
+      "nav14"
+      "nav15";
+  }
+  main {
+    height: auto;
+    width: auto;
+    margin-left: 0px !important;
+    padding-top: 350px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 200px;
+  }
+
+  #navbar a {
+    text-decoration: none;
+    color: rgb(84, 85, 89);
+    border: 1px solid #000;
+    border-right: none;
+    border-bottom: none !important;
+    display: flex;
+    padding-left: 10px !important;
+    align-items: center;
+    justify-items: center;
+    width: 250px;
+    padding: 10px 10px 10px 10px;
+  }
+}
