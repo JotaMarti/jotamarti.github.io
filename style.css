@@ -52,6 +52,7 @@ body {
 #grid a {
   margin: 0px;
   text-decoration: none;
+  color: rgb(0, 128, 128);
 }
 
 #grid {
