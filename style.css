@@ -51,6 +51,7 @@ body {
 
 #grid a {
   margin: 0px;
+  text-decoration: none;
 }
 
 #grid {
