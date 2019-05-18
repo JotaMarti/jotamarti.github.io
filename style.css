@@ -1,60 +1,387 @@
-#main {
-  background-color: rgba(235, 235, 235, 0.801);
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 0 0 0;
+  height: auto;
+}
+
+#welcome-section {
+  background-color: rgb(224, 235, 232);
+  height: 100vh;
+}
+
+#nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 15px !important;
+  position: fixed;
+  background-color: rgb(224, 235, 232);
+}
+
+#navbar {
+  padding-right: 30px;
+}
+
+.text {
+  text-align: center;
+  padding-top: 35vh;
+}
+
+.text p {
+  margin-top: -18px;
+  color: rgb(6, 131, 7);
+}
+
+.text1 {
+  text-align: center;
+  padding-top: 15vh !important;
+}
+
+.text1 p {
+  margin-top: -18px;
+  color: black !important;
+}
+
+#welcome-section a {
+  text-decoration: none;
+  color: rgb(0, 128, 128);
+  margin: 50px;
+}
+
+#grid a {
+  margin: 0px;
+}
+
+#grid {
+  padding-top: 0px;
+  display: grid;
   width: 100%;
   height: auto;
-  font-family: "Open Sans", sans-serif;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-#title {
-  text-align: center;
-  padding-top: 20px;
-}
-
-#img-div {
-  width: 99%;
+  grid-row-gap: 84px;
+  align-items: center;
+  justify-items: center;
   margin: 0 auto;
-  justify-self: center;
-  background-color: white;
-  text-align: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "project1 project2 project3"
+    "project4 project5 project6";
 }
-#image {
-  width: 99%;
-  max-width: 1024px;
+
+#grid div {
+  border: 2px solid rgb(173, 216, 230);
+}
+
+#grid img {
+  width: 280px !important;
+  border-bottom: 2px solid rgb(173, 216, 230);
+}
+
+#grid p {
+  text-align: center;
+  vertical-align: middle !important;
+  height: 40px;
+  margin: 0;
+  padding-top: 3px;
+  font-weight: bolder;
+}
+
+.item1 {
+  grid-area: project1;
+}
+
+.item2 {
+  grid-area: project2;
+}
+
+.item3 {
+  grid-area: project3;
+}
+
+.item4 {
+  grid-area: project4;
+}
+
+.item5 {
+  grid-area: project5;
+}
+
+.item6 {
+  grid-area: project6;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+  width: 280px !important;
+  height: 221px !important;
+}
+
+#projectsh2 {
+  color: rgb(0, 128, 128);
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#projects {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  height: 100vh !important;
+  min-height: 900px;
+}
+
+#button {
+  padding-top: 85px;
+}
+
+#button button {
+  width: 200px;
+  height: 45px;
+  border: 2px solid rgb(171, 212, 175);
+  background-color: rgb(224, 235, 232);
+  border-radius: 3px;
+  font-weight: 600;
+  color: rgb(32, 143, 142);
+  font-size: 18px;
+  z-index: 1;
+}
+
+#grid1 {
+  pointer-events: none;
+  padding-top: 0px;
+  display: grid;
+  width: 100%;
   height: auto;
-  padding-top: 2px;
-  display: block;
+  grid-row-gap: 84px;
+  align-items: center;
+  justify-items: center;
+  padding-top: 50px;
   margin: 0 auto;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "social1 social2 social3 social4 social5";
 }
 
-#img-caption {
-  padding-bottom: 20px;
+#grid1 a {
+  margin: 0;
 }
 
-#tribute-info {
-  text-align: left;
-  padding-top: 10px;
-  width: 60%;
-  margin: 0 auto;
+#grid1 button {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(171, 212, 175);
+  background-color: rgb(224, 235, 232);
+  border-radius: 50%;
+  font-weight: 600;
+  color: rgb(32, 143, 142);
+  font-size: 18px;
+  z-index: 1;
 }
 
-ul {
-  padding-left: 14px;
+.btn1,
+.btn2,
+.btn3,
+.btn4,
+.btn5 {
+  pointer-events: auto;
 }
 
-ul li {
-  margin: 0 0 8px 0;
+.item7 {
+  grid-area: social1;
 }
 
-#cite {
-  font-style: italic;
-  width: 70%;
-  margin: 0 auto;
+.item8 {
+  grid-area: social2;
+}
+
+.item9 {
+  grid-area: social3;
+}
+
+.item10 {
+  grid-area: social4;
+}
+
+.item11 {
+  grid-area: social5;
+}
+.btn1:hover {
+  background-color: rgb(173, 216, 230) !important;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  background-color: rgb(173, 216, 230) !important;
+  cursor: pointer;
+}
+
+.btn3:hover {
+  background-color: rgb(173, 216, 230) !important;
+  cursor: pointer;
+}
+
+.btn4:hover {
+  background-color: rgb(173, 216, 230) !important;
+  cursor: pointer;
+}
+
+.btn5:hover {
+  background-color: rgb(173, 216, 230) !important;
+  cursor: pointer;
+}
+
+#button:hover .btn {
+  background-color: rgb(173, 216, 230);
+  cursor: pointer;
+}
+
+.media {
+  height: 100vh;
+  min-height: 600px;
+  background-color: rgb(200, 247, 197);
+}
+
+footer {
+  height: 12vh;
+  min-height: 90px;
+  background-color: rgb(34, 49, 63);
+}
+
+footer p {
+  margin-top: 0;
+  padding-top: 20px;
   text-align: center;
+  color: white;
+  margin-bottom: 0;
 }
 
-#footer {
-  margin: 0 auto;
-  text-align: center;
+footer a {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  #grid {
+    padding-top: 0px;
+    display: grid;
+    width: 100%;
+    height: auto !important;
+    grid-row-gap: 84px;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "project1 project2"
+      "project3 project4"
+      "project5 project6";
+  }
+
+  #projects {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    height: auto !important;
+  }
+
+  .media {
+    margin-top: 85px;
+  }
+  #grid1 {
+    pointer-events: none;
+    padding-top: 0px;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-row-gap: 84px;
+    align-items: center;
+    justify-items: center;
+    padding-top: 50px;
+    margin: 0 auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "social1 social2 social3 social4"
+      "social5 social5 social5 social5";
+  }
+}
+
+@media (max-width: 700px) {
+  #grid {
+    padding-top: 0px;
+    display: grid;
+    width: 100%;
+    height: auto !important;
+    grid-row-gap: 84px;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3"
+      "project4"
+      "project5"
+      "project6";
+  }
+
+  #button {
+    padding-top: 0px !important;
+  }
+  #projects {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    height: auto !important;
+  }
+
+  .media {
+    margin-top: 85px;
+  }
+  #grid1 {
+    pointer-events: none;
+    padding-top: 0px;
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-row-gap: 84px;
+    align-items: center;
+    justify-items: center;
+    padding-top: 50px;
+    margin: 0 auto;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "social1 social1 social2 social2 social3 social3"
+      "social4 social4 social4 social5 social5 social5";
+  }
+}
+
+@media (max-width: 500px) {
+  #grid1 {
+    pointer-events: none;
+    padding-top: 0px;
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    padding-top: 50px;
+    margin: 0 auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "social1 social2"
+      "social3 social4"
+      "social5 social5";
+  }
 }
