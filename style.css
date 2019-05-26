@@ -14,13 +14,15 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-top: 15px !important;
+  padding-top: 0px !important;
   position: fixed;
+  height: 30px;
   background-color: rgb(224, 235, 232);
 }
 
 #navbar {
   padding-right: 30px;
+  padding-bottom: 5px;
 }
 
 .text {
