@@ -304,6 +304,11 @@ input {
     padding-top: 10px;
   }
 
+  #nav-bar {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
   a {
     margin: 0px !important;
   }
@@ -332,7 +337,7 @@ input {
   #grid2 {
     padding-top: 60px;
     display: grid;
-    width: 50%;
+    width: 75%;
     max-width: 1000px;
     align-items: center;
     justify-items: center;
