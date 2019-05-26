@@ -365,6 +365,14 @@ footer a {
       "social1 social1 social2 social2 social3 social3"
       "social4 social4 social4 social5 social5 social5";
   }
+
+  #welcome-section a {
+    margin: 15px !important;
+  }
+
+  footer p {
+    padding-top: 5px !important;
+  }
 }
 
 @media (max-width: 500px) {
