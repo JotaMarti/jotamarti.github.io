@@ -174,11 +174,12 @@ main div {
     z-index: 1;
     top: 0;
     bottom: 0;
-    width: 350px;
-    margin-left: 1px;
+    width: 100% !important;
     align-items: center;
-    justify-items: left;
-    margin-left: 100px;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    margin: 0 auto !important;
     grid-template-columns: auto;
     grid-template-rows: 60px repeat(14, 42px) 500px;
     grid-template-areas:
@@ -197,6 +198,11 @@ main div {
       "nav13"
       "nav14"
       "nav15";
+  }
+
+  #navbar header {
+    padding-left: 20px !important;
+    width: 100%;
   }
   main {
     height: auto;
