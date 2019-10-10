@@ -1,0 +1,33 @@
+.cabecera {
+  background-color: aqua;
+  width: 100%;
+  height: 10vh;
+}
+
+.menu {
+  background-color: red;
+  width: 20%;
+  float: left;
+  height: 80vh;
+}
+
+.contenidos {
+  background-color: yellowgreen;
+  width: 60%;
+  float: left;
+  height: 80vh;
+}
+
+.lateral {
+  background-color: blueviolet;
+  width: 20%;
+  float: left;
+  height: 80vh;
+}
+
+.piepagina {
+  background-color: yellow;
+  width: 100%;
+  float: left;
+  height: 10vh;
+}

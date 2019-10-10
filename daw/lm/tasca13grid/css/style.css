@@ -1,0 +1,35 @@
+.contenedor {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-areas:
+    "cabecera cabecera cabecera"
+    "menu contenidos lateral"
+    "pie pie pie";
+}
+
+.cabecera {
+  background-color: aqua;
+  width: 100%;
+  grid-area: cabecera;
+}
+
+.menu {
+  background-color: red;
+  grid-area: menu;
+}
+
+.contenidos {
+  background-color: yellowgreen;
+  grid-area: contenidos;
+}
+
+.lateral {
+  background-color: blueviolet;
+  grid-area: lateral;
+}
+
+.piepagina {
+  background-color: yellow;
+  grid-area: pie;
+}
