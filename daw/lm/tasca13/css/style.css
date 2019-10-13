@@ -1,33 +1,275 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
 .cabecera {
-  background-color: aqua;
+  background: rgba(0, 78, 173, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(255, 255, 255, 1) 67%,
+    rgba(255, 255, 255, 1) 71%,
+    rgba(255, 255, 255, 1) 79%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(0, 78, 173, 1)),
+    color-stop(0%, rgba(0, 78, 173, 1)),
+    color-stop(67%, rgba(255, 255, 255, 1)),
+    color-stop(71%, rgba(255, 255, 255, 1)),
+    color-stop(79%, rgba(255, 255, 255, 1)),
+    color-stop(100%, rgba(255, 255, 255, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(255, 255, 255, 1) 67%,
+    rgba(255, 255, 255, 1) 71%,
+    rgba(255, 255, 255, 1) 79%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(255, 255, 255, 1) 67%,
+    rgba(255, 255, 255, 1) 71%,
+    rgba(255, 255, 255, 1) 79%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(255, 255, 255, 1) 67%,
+    rgba(255, 255, 255, 1) 71%,
+    rgba(255, 255, 255, 1) 79%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(255, 255, 255, 1) 67%,
+    rgba(255, 255, 255, 1) 71%,
+    rgba(255, 255, 255, 1) 79%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ead', endColorstr='#ffffff', GradientType=1 );
   width: 100%;
   height: 10vh;
+  display: flex;
+  min-height: 71px;
 }
 
-.menu {
-  background-color: red;
-  width: 20%;
-  float: left;
-  height: 80vh;
+#logo {
+  flex-grow: 1;
+}
+#logo img {
+  background-color: black;
+  display: block;
+  margin-left: auto;
 }
 
+#contacto {
+  flex-grow: 1;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  #contacto {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+#contacto i {
+  padding-left: 15px;
+}
 .contenidos {
-  background-color: yellowgreen;
-  width: 60%;
+  background-color: #ebe8e4;
+  width: 58%;
   float: left;
   height: 80vh;
+  border-right: 5px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #5e5757;
+}
+
+.contenidos img {
+  width: 100%;
+}
+
+.contenidos section {
+  background-color: white;
+  width: 80%;
+  max-width: 700px;
+}
+
+.contenidos section h3 {
+  padding-left: 5px;
+}
+
+.contenidos section p {
+  padding-left: 15px;
+}
+
+.contenidos section button {
+  margin-left: 5px;
+  margin-bottom: 5px;
 }
 
 .lateral {
-  background-color: blueviolet;
+  background-color: #ebe8e4;
   width: 20%;
   float: left;
   height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lateral a {
+  text-decoration: none;
+  background-color: #ff6e01;
+  color: white;
+  margin-bottom: 10px;
+  padding: 1px 5px;
+  border-radius: 5%;
+  width: 80%;
+  text-align: center;
+}
+
+.lateral a:nth-child(1) {
+  margin-top: 50px;
 }
 
 .piepagina {
-  background-color: yellow;
+  background: rgba(0, 78, 173, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(255, 255, 255, 1) 67%,
+    rgba(255, 255, 255, 1) 71%,
+    rgba(255, 255, 255, 1) 79%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(0, 78, 173, 1)),
+    color-stop(0%, rgba(0, 78, 173, 1)),
+    color-stop(67%, rgba(255, 255, 255, 1)),
+    color-stop(71%, rgba(255, 255, 255, 1)),
+    color-stop(79%, rgba(255, 255, 255, 1)),
+    color-stop(100%, rgba(255, 255, 255, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(255, 255, 255, 1) 67%,
+    rgba(255, 255, 255, 1) 71%,
+    rgba(255, 255, 255, 1) 79%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(255, 255, 255, 1) 67%,
+    rgba(255, 255, 255, 1) 71%,
+    rgba(255, 255, 255, 1) 79%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(255, 255, 255, 1) 67%,
+    rgba(255, 255, 255, 1) 71%,
+    rgba(255, 255, 255, 1) 79%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(0, 78, 173, 1) 0%,
+    rgba(255, 255, 255, 1) 67%,
+    rgba(255, 255, 255, 1) 71%,
+    rgba(255, 255, 255, 1) 79%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ead', endColorstr='#ffffff', GradientType=1 );
   width: 100%;
   float: left;
   height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.piepagina .derechos {
+  flex-grow: 1;
+  color: white;
+}
+
+.piepagina .redes {
+  flex-grow: 1;
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+}
+
+.piepagina .redes a {
+  text-decoration: none;
+  color: white;
+  padding-right: 10px;
+}
+
+.menu2 li {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #666666;
+  font-weight: bold;
+  float: left;
+  width: 100%;
+}
+
+.menu2 ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #ebe8e4;
+}
+
+.menu2 li a {
+  display: block;
+  text-align: center;
+  padding: 14px 15px 14px 15px;
+  text-decoration: none;
+  color: #666666;
+  font-weight: bold;
+}
+
+.menu2 li:hover {
+  background-color: #477fc4;
+}
+
+.menu2 a:hover {
+  color: white;
+}
+
+.menu2 {
+  background-color: #ebe8e4;
+  border-right: 5px solid #477fc4;
+  width: 18.9%;
+  float: left;
+  height: 80vh;
 }
