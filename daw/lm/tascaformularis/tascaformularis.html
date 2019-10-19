@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tasca Formularis</title>
+  </head>
+  <body>
+    <h3>Formulari 0:</h3>
+    <form>
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label>Nombre:</label>
+        <input type="text" /><br />
+        <label>Apellidos:</label>
+        <input type="text" /><br />
+        <label>DNI:</label>
+        <input type="text" /><br />
+      </fieldset>
+    </form>
+    <form>
+      <fieldset>
+        <legend>Datos académicos</legend>
+        Elija un ciclo:<br />
+        <input id="datos" type="radio" name="ciclo" required />DAM<br />
+        <input id="datos" type="radio" name="ciclo" required />DAW<br />
+        <input
+          id="datos"
+          type="radio"
+          name="ciclo"
+          required
+          checked
+        />ASIR<br />
+      </fieldset>
+    </form>
+    <h3>Formulari 1:</h3>
+    <form>
+      <fieldset>
+        <legend>Datos fiscales</legend>
+        <input type="checkbox" name="form1_datos" />En paro<br />
+        <input type="checkbox" name="form1_datos" />Autónomo<br />
+        <input type="checkbox" name="form1_datos" />Por c.ajena<br />
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label>Nombre:</label>
+        <input type="text" /><br />
+        <label>Apellidos:</label>
+        <input type="text" /><br />
+        <label>Sueldo</label>
+        <select name="dropdown">
+          <option value="mas400">Más de 400</option>
+          <option value="menos400">Menos de 400</option>
+          <option value="variable">Variable</option> </select
+        ><br />
+        <input type="checkbox" name="opciones" />Con enfermedad profesional<br />
+        <input type="checkbox" name="opciones" />Con padres a cargo<br />
+        <input type="checkbox" name="opciones" />Con hijos a cargo<br />
+      </fieldset>
+    </form>
+    <h3>Formulari 2:</h3>
+    <form>
+      <fieldset>
+        <legend>Datos fiscales</legend>
+        <select name="transporte" size="4">
+          <option>Automociómn</option>
+          <option>Metal</option>
+          <option selected>Informática</option>
+          <option>Finanzas</option> </select
+        ><br />
+        <input type="checkbox" name="form2_datos" />Autónomo
+        <input type="checkbox" name="form2_datos" />Por c. ajena
+        <input type="checkbox" name="form2_datos" />No sabe<br />
+        Describa su función: <br />
+        <textarea rows="2" cols="25" placeholder="Escriba aquí"></textarea>
+      </fieldset>
+    </form>
+  </body>
+</html>
