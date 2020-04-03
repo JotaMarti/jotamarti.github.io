@@ -115,7 +115,28 @@ function pintaGrafica(datos){
     data: datos,
 
     // Configuration options go here
-    options: {}
+    options: {
+      hover: {
+        mode: 'nearest',
+        intersect: true
+      },
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Dia'
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Numero Personas'
+          }
+        }]
+      }
+    }
   });
 };
 
@@ -129,16 +150,18 @@ function ExtraeDatosTabla(datos){
     labels: datos.dias.reverse(),
     datasets: [
       {
-        label: "Infectados",
-        backgroundColor: "#4caf50",
-        borderColor: "#4caf50",
-        data: datos.infectados.reverse()
-      },
-      {
         label: "Muertos",
+        fill: false,
         backgroundColor: "red",
         borderColor: "red",
         data: datos.muertos.reverse()
+      },
+      {
+        label: "Infectados",
+        backgroundColor: "#4caf50",
+        borderColor: "#4caf50",
+        data: datos.infectados.reverse(),
+        fill: true
       }
     ]
   }
