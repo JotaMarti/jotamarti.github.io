@@ -38,7 +38,9 @@ function refrescaPagina() {
 
 
 async function fetchData() {
-  let value = fetch("https://jotamarti.github.io/covid/data/casos.xml")
+  let value = fetch("https://jotamarti.github.io/covid/data/casos.xml", {
+    cache: "no-store"
+  })
     .then(response => {
       let texto = response.text();
       return texto;
