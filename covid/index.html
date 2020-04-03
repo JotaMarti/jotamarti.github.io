@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>Covi-19 Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>Seguimiento Covid-19</h1>
+    </header>
+    <div class="selector">
+      <label for="paises">Escoja un pais:</label>
+      <select id="paises">
+      </select>
+    </div>
+    <div id="root">
+      <div class="grafica">
+        <canvas id="myChart"></canvas>
+      </div>
+      <table id="tabla">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Dia</th>
+            <th>Infectados</th>
+            <th>Muertos</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+        <tfoot id="tfoot"></tfoot>
+      </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

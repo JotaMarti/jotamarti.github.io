@@ -1,0 +1,51 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+#tabla {
+  margin: 0 auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#tabla {
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: hsl(122, 39%, 95%);
+}
+
+#myChart {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  flex-direction: column;
+}
+
+
+
