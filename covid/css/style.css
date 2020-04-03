@@ -47,5 +47,9 @@ tbody tr:nth-child(odd) {
   flex-direction: column;
 }
 
+footer {
+  text-align: center;
+}
+
 
 
