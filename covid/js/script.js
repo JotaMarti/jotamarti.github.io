@@ -94,7 +94,7 @@ function ExtraeDatosPais(array){
     datos.totalInfectados += parseInt(elemento.childNodes[9].textContent);
     datos.totalMuertos += parseInt(elemento.childNodes[11].textContent);
     datos.dias.push(elemento.childNodes[1].textContent);
-    datos.infectados.push(elemento.childNodes[9].textContent);
+    datos.infectados.push(elemento.childNodes[9].textContent > 0 ? elemento.childNodes[9].textContent : 0);
     datos.muertos.push(elemento.childNodes[11].textContent);
   });
   return datos;
