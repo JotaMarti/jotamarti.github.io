@@ -1,0 +1,175 @@
+body {
+    background-color: #3d486c;
+    font-family: "Open Sans", sans-serif;
+    color: #dfdfef;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+}
+
+#main {
+    width: 90%;
+    max-width: 920px;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 300px 300px 300px;
+    grid-template-areas: 
+    "map map"
+    "map map"
+    "totales grafDistancia"
+    "corazon grafCorazon";
+}
+
+
+#mapid { 
+    height: 600px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#map {
+    grid-area: map;
+}
+
+#totales {
+    background-color: #445175;
+    border-radius: 10px;
+    grid-area: totales;
+    text-align: center;
+}
+
+#grafDistancia {
+    background-color: #445175;
+    border-radius: 10px;
+    grid-area: grafDistancia;
+}
+
+#corazon {
+    background-color: #445175;
+    border-radius: 10px;
+    grid-area: corazon;
+    text-align: center;
+}
+
+#grafCorazon {
+    background-color: #445175;
+    border-radius: 10px;
+    grid-area: grafCorazon;
+}
+
+p {
+    background-color: #5d6c9e;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#graficaDistancia {
+    height: 100% !important;
+    color: #dfdfef;
+}
+
+#graficaCorazon {
+    height: 100% !important;
+    color: #dfdfef;
+}
+
+#totales h3 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+@media only screen and (max-device-width : 640px) {
+    #main {
+        width: 90%;
+        max-width: 920px;
+        height: auto;
+        border-radius: 5px;
+        margin: 0 auto;
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 300px 300px 300px 300px 300px;
+        grid-template-areas: 
+        "map"
+        "map"
+        "totales"
+        "grafDistancia"
+        "corazon"
+        "grafCorazon";
+    }
+
+    #mapid { 
+        height: 600px;
+        width: 100% !important;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    #main {
+        width: 90%;
+        max-width: 920px;
+        height: auto;
+        border-radius: 5px;
+        margin: 0 auto;
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 300px 300px 300px 300px 300px;
+        grid-template-areas: 
+        "map"
+        "map"
+        "totales"
+        "grafDistancia"
+        "corazon"
+        "grafCorazon";
+    }
+
+    #mapid { 
+        height: 600px;
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    }
+    
+
+
+@media (max-width: 800px) {
+    #main {
+        width: 90%;
+        max-width: 920px;
+        height: auto;
+        border-radius: 5px;
+        margin: 0 auto;
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 300px 300px 300px 300px 300px;
+        grid-template-areas: 
+        "map"
+        "map"
+        "totales"
+        "grafDistancia"
+        "corazon"
+        "grafCorazon";
+    }
+
+    #mapid { 
+        height: 600px;
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    
+}
