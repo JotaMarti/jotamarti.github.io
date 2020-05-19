@@ -62,7 +62,7 @@ function cargaPagina() {
 }
 
 async function fetchData() {
-  let value = fetch("../data/rellotgeA.xml", {
+  let value = fetch("https://jotamarti.github.io/proyectointegrador/data/rellotgeA.xml", {
     cache: "no-store",
   })
     .then((response) => {
