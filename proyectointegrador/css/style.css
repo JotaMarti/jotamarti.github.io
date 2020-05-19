@@ -85,3 +85,91 @@ p {
     margin-top: 12px;
     margin-bottom: 12px;
 }
+
+
+@media only screen and (max-device-width : 640px) {
+    #main {
+        width: 90%;
+        max-width: 920px;
+        height: auto;
+        border-radius: 5px;
+        margin: 0 auto;
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 300px 300px 300px 300px 300px;
+        grid-template-areas: 
+        "map"
+        "map"
+        "totales"
+        "grafDistancia"
+        "corazon"
+        "grafCorazon";
+    }
+
+    #mapid { 
+        height: 600px;
+        width: 100% !important;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    #main {
+        width: 90%;
+        max-width: 920px;
+        height: auto;
+        border-radius: 5px;
+        margin: 0 auto;
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 300px 300px 300px 300px 300px;
+        grid-template-areas: 
+        "map"
+        "map"
+        "totales"
+        "grafDistancia"
+        "corazon"
+        "grafCorazon";
+    }
+
+    #mapid { 
+        height: 600px;
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    }
+    
+
+
+@media (max-width: 800px) {
+    #main {
+        width: 90%;
+        max-width: 920px;
+        height: auto;
+        border-radius: 5px;
+        margin: 0 auto;
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 300px 300px 300px 300px 300px;
+        grid-template-areas: 
+        "map"
+        "map"
+        "totales"
+        "grafDistancia"
+        "corazon"
+        "grafCorazon";
+    }
+
+    #mapid { 
+        height: 600px;
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    
+}
